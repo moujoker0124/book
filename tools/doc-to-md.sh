@@ -4,7 +4,7 @@ set -eu
 
 # Get all the docx files in the tmp dir.
 find tmp -name '*.docx' -print0 | \
-# Extract just the filename so we can reuse it easily.
+# Extract just the filename so we can reuse it easily 哈哈哈.
 xargs -0 basename -s .docx | \
 while IFS= read -r filename; do
     # Truncate the `nostarch` dir file and put the "no editing" warning back.
